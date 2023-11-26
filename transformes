@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p1{
+            border: 1px solid blue;
+            position: absolute;
+            top:100px;
+            padding: 60px;
+            left: 400px;
+            background-color: aqua; 
+            width:110px;
+        }
+        .p1:active{
+            background-color: brown;
+        }
+        input[value="tf1"]:checked ~ .p1{
+            transform: rotate(none);
+        
+        }
+        input[value="tf2"]:checked ~ .p1{
+            transform: rotate(20deg);
+        }
+        input[value="tf3"]:checked ~ .p1{
+            transform: rotate(40deg);
+        }
+        input[value="tf4"]:checked ~ .p1{
+            transform: rotate(60deg);
+        }
+        input[value="tf5"]:checked ~ .p1{
+            transform: rotate(80deg);
+        }
+        input[value="tf6"]:checked ~ .p1{
+            transform: rotate(100deg);
+        }
+        input[value="tf7"]:checked ~ .p1{
+            transform: rotate(100deg);
+        }
+        input[value="tf8"]:checked ~ .p1{
+            transform: skew(100deg);
+        }
+        input[value="tf9"]:checked ~ .p1{
+            transform:  skew(20deg,20deg);      
+         }
+        input[value="tf10"]:checked ~ .p1{
+            transform: skew(30deg,30deg);
+        }
+        input[value="tf11"]:checked ~ .p1{
+            transform: skewX(30deg);
+        }
+        input[value="tf12"]:checked ~ .p1{
+            transform: skewX(40deg);
+        }
+        input[value="tf13"]:checked ~ .p1{
+            transform: skewY(30deg);
+
+        }
+        input[value="tf14"]:checked ~ .p1{
+            transform:skewY(40deg);
+        }
+        input[value="tf15"]:checked ~ .p1{
+            transform: translate(20px,10px);
+        }
+        input[value="tf16"]:checked ~ .p1{
+            transform:  translate(20px,20px);
+        }
+        input[value="tf17"]:checked ~ .p1{
+            transform:  scale(2,2);
+        }
+        input[value="tf18"]:checked ~ .p1{
+            transform: scale(2,3);
+        }
+        input[value="tf10"]:checked ~ .p1{
+            transform:matrix(0.866,0.7,-0.8,0.866,0,0);
+        }
+        
+        input[value="tf19"]:checked ~ .p1{
+            transform: rotate(100deg);
+        }
+        input[value="tf20"]:checked ~ .p1{
+            transform: rotate(100deg);
+        }
+        
+        input[value="tf19"]:checked ~ .p1{
+            transform: rotate(100deg);
+        }
+        input[value="tf20"]:checked ~ .p1{
+            transform: rotate(100deg);
+        }
+        .md{
+            border: 2px solid black;
+            width: 650px;
+            background-color:antiquewhite
+        }
+       span{
+        background-color: gray;
+        background-color: gold;
+       } 
+    </style>
+</head>
+<body>
+    <div class="md">
+       
+        <input type="radio" name="transformer" value="tf1"><span>transform:none;</span><br><br>
+        <input type="radio" name="transformer" value="tf2"><span>transform:rotate(10deg);</span><br><br>
+        <input type="radio" name="transformer" value="tf3"><span>transform:rotate(45deg)</span><br><br>
+        <input type="radio" name="transformer" value="tf4"><span>transform:rotate(45deg);</span><br><br>
+        <input type="radio" name="transformer" value="tf4"><span>transform:rotate(45deg);</span><br><br>
+        <input type="radio" name="transformer" value="tf5"><span>transform:rotate(100deg);</span><br><br>
+        <input type="radio" name="transformer" value="tf6"><span>transform:rotate(45deg);</span><br><br>
+        <input type="radio" name="transformer" value="tf7"><span>transform:rotate(80deg);</span><br><br>
+        <input type="radio" name="transformer" value="tf8"><span>transform:skew(20deg,20deg);</span><br><br>
+        <input type="radio" name="transformer" value="tf9"><span>transform:skew(30deg,30deg);</span><br><br>
+        <input type="radio" name="transformer" value="tf10"><span>transform:skewX(30deg);</span><br><br>
+        <input type="radio" name="transformer" value="tf11"><span>transform:skewX(40deg);</span><br><br>
+        <input type="radio" name="transformer" value="tf12"><span>transform: skewY(30deg);</span><br><br>
+        <input type="radio" name="transformer" value="tf13"><span>transform: skewY(40deg);</span><br><br>
+        <input type="radio" name="transformer" value="tf14"><span>transform:translate(20px,10px);</span><br><br>
+        <input type="radio" name="transformer" value="tf15"><span>transform:translate(20px,20px);</span><br><br>
+        <input type="radio" name="transformer" value="tf16"><span>transform: scale(2,2);</span><br><br>
+        <input type="radio" name="transformer" value="tf17"><span>transform: scale(2,3);</span><br><br>
+        <input type="radio" name="transformer" value="tf18"><span>transform:matrix(0.866,0.7,-0.8,0.866,0,0);</span><br><br>
+        <input type="radio" name="transformer" value="tf19"><span>transform:matrix(0.586,0.8,-0.8,0.586,0,0);</span><br><br>
+        <input type="radio" name="transformer" value="tf20"><span>transform:matrix(0.586,0.8,-0.8,0.586,40,30);</span><br><br>
+        <div class="p1">transformer all rotatiuons</div>
+   
+    </div>
+</body>
+</html>
